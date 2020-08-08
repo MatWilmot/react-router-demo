@@ -1,3 +1,30 @@
+# React Router & Components
+
+In this project I created a modular form, where you can add new form elements by adding components inside a form tag.
+
+`<form></form>`
+
+To create a form element, you add the self-closing `<formElement />` tag with some props.
+
+- label - the label for the element (Required)
+- type - what type of input (e.g. "checkbox", "password", etc) (Optional)
+- id - a standard id for the element (Optional)
+- placeholder - pretty self-explanatory (Optional)
+- modifyForm - a custom function to build the object. Add this if you want this form element to be added to an object (Optional)
+
+## Example
+
+    <Form>
+      <FormElement
+        label={"Email"}
+        type={'email'}
+        placeholder={"Enter email here.."}
+        modifyForm={modifyForm}
+      />
+    </form>
+
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
