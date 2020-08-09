@@ -8,7 +8,7 @@ const FormElement = (props) => {
       <input
         type={props.type}
         className="form-control"
-        name={props.label}
+        name={props.name}
         id={props.id}
         placeholder={props.placeholder}
         onChange={props.modifyForm}
@@ -20,6 +20,7 @@ const FormElement = (props) => {
 FormElement.propTypes = {
   label: PropTypes.string.isRequired,
   type: PropTypes.string,
+  name: PropTypes.string,
   id: PropTypes.string,
   placeholder: PropTypes.string,
 };

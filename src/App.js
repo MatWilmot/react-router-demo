@@ -36,12 +36,14 @@ function App() {
               <FormElement
                 label={"Email"}
                 type={"email"}
+                name={"emailAddress"}
                 placeholder={"Enter email here.."}
                 modifyForm={modifyForm}
               />
               <FormElement
                 label={"Password"}
                 type={"password"}
+                name={"password"}
                 placeholder={"Enter password here.."}
                 modifyForm={modifyForm}
               />

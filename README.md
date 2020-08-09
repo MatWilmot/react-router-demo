@@ -8,6 +8,7 @@ To create a form element, you add the self-closing `<formElement />` tag with so
 
 - label - the label for the element (Required)
 - type - what type of input (e.g. "checkbox", "password", etc) (Optional)
+- name - this will be the object's key for this field. Only required if using the `modifyForm` tag.
 - id - a standard id for the element (Optional)
 - placeholder - pretty self-explanatory (Optional)
 - modifyForm - a custom function to build the object. Add this if you want this form element to be added to an object (Optional)
@@ -17,7 +18,8 @@ To create a form element, you add the self-closing `<formElement />` tag with so
     <Form>
       <FormElement
         label={"Email"}
-        type={'email'}
+        type={"email"}
+        name={"emailAddress"}
         placeholder={"Enter email here.."}
         modifyForm={modifyForm}
       />
